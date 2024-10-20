@@ -1,0 +1,4 @@
+INFO [actix_test::init] Starting Actix Web server...
+INFO [actix_server::builder] starting 10 workers
+INFO [actix_server::server] Actix runtime found; starting in Actix runtime
+INFO [actix_server::server] starting service: "actix-web-service-127.0.0.1:8080", workers: 10, listening on: 127.0.0.1:8080

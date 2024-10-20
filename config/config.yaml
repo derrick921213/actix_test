@@ -1,0 +1,4 @@
+debug: true
+database:
+  url: postgres://localhost/mydb
+  pool_size: 5

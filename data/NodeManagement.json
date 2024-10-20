@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "id": "test-1",
+      "name": "Test 1",
+      "status": "online"
+    }
+  ],
+  "node_status": {
+    "test-1": {
+      "cpu_usage": 30.22,
+      "memory_usage": 2048,
+      "disk_usage": 4000
+    }
+  }
+}

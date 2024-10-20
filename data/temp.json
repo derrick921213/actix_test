@@ -1,0 +1,144 @@
+{
+    "nodeManagement": {
+        "nodes": [
+            {
+                "id": "node-1",
+                "name": "Node 1",
+                "status": "healthy"
+            },
+            {
+                "id": "node-2",
+                "name": "Node 2",
+                "status": "unhealthy"
+            }
+        ],
+        "nodeStatus": {
+            "node-1": {
+                "cpu_usage": 30.5,
+                "memory_usage": 2048,
+                "disk_usage": 50000
+            },
+            "node-2": {
+                "cpu_usage": 80.5,
+                "memory_usage": 4096,
+                "disk_usage": 50000
+            }
+        }
+    },
+    "resourceScheduling": {
+        "clusterResourceUsage": {
+            "cpu_usage": 75.4,
+            "memory_usage": 48000,
+            "disk_usage": 100000
+        },
+        "nodeResourceUsage": {
+            "node-1": {
+                "cpu_usage": 55.6,
+                "memory_usage": 1024,
+                "disk_usage": 30000
+            }
+        }
+    },
+    "serviceManagement": {
+        "services": [
+            {
+                "id": "service-1",
+                "name": "Service 1",
+                "status": "running",
+                "replicas": 3
+            },
+            {
+                "id": "service-2",
+                "name": "Service 2",
+                "status": "stopped",
+                "replicas": 0
+            }
+        ],
+        "serviceStatus": {
+            "service-1": {
+                "version": "1.0.0",
+                "replicas": 3
+            }
+        }
+    },
+    "logsAndEvents": {
+        "systemLogs": [
+            {
+                "timestamp": "2024-10-16T12:00:00Z",
+                "level": "INFO",
+                "message": "System started"
+            },
+            {
+                "timestamp": "2024-10-16T12:05:00Z",
+                "level": "ERROR",
+                "message": "Disk space low"
+            }
+        ],
+        "serviceLogs": {
+            "service-1": [
+                {
+                    "timestamp": "2024-10-16T12:10:00Z",
+                    "level": "INFO",
+                    "message": "Service running"
+                }
+            ]
+        },
+        "clusterEvents": [
+            {
+                "timestamp": "2024-10-16T11:00:00Z",
+                "event": "Node added",
+                "node_id": "node-3"
+            }
+        ]
+    },
+    "alertsAndNotifications": {
+        "activeAlerts": [
+            {
+                "id": "alert-1",
+                "type": "CPU Overload",
+                "severity": "high"
+            }
+        ],
+        "alertRules": [
+            {
+                "id": "rule-1",
+                "type": "Memory Leak",
+                "threshold": "80%"
+            }
+        ]
+    },
+    "networkAndStorage": {
+        "networkStatus": {
+            "status": "healthy",
+            "latency": "10ms",
+            "packet_loss": "0%"
+        },
+        "storageUsage": {
+            "total_space": 100000,
+            "used_space": 75000,
+            "free_space": 25000
+        },
+        "volumes": [
+            {
+                "id": "vol-1",
+                "size": 50000,
+                "status": "available"
+            }
+        ]
+    },
+    "backupAndRestore": {
+        "lastBackup": {
+            "timestamp": "2024-10-15T00:00:00Z",
+            "status": "success"
+        }
+    },
+    "monitoringAndLoggingConfig": {
+        "loggingLevels": {
+            "service-1": "DEBUG"
+        },
+        "monitoringConfig": {
+            "cpu_threshold": 80,
+            "memory_threshold": 90
+        }
+    }
+}
